@@ -56,6 +56,13 @@ public class MovieDAOTest {
 			System.out.println(movie);
 		}
 	}
+	
+	@Test
+	public void testMovie() throws SQLException {
+		int no = 1;
+		Movie movie = dao.selectMovieByNo(conn, no);
+			System.out.println(movie);
+	}
 
 	
 	
